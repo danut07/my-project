@@ -92,7 +92,7 @@ export const TeorieContinut = () => {
         flex={1}
         w="50vw"
       >
-        {Object.values(listaTeorie[teorie]).at(subject)}
+        {Object.values(listaTeorie[teorie])}
       </Flex>
     </Flex>
   );
