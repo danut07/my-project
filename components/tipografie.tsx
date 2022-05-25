@@ -14,7 +14,3 @@ export const TextSubcapitol = ({ children }: any) => {
     </Flex>
   );
 };
-//@ts-ignore
-export const MyText = ({ children }) => {
-  return <Flex>{children}</Flex>;
-};

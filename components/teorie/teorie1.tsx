@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { TextSubcapitol, TitluSubcapitol } from "../tipografie";
 export const useTeorie1 = () => {

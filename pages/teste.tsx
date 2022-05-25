@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { TeorieContinut } from "../components/TeorieContinut";
 
-const Teorie: NextPage = () => {
+const Teste: NextPage = () => {
   return <TeorieContinut />;
 };
 
-export default Teorie;
+export default Teste;

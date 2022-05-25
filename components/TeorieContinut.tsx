@@ -44,7 +44,7 @@ export const TeorieContinut = () => {
           direction="column"
           mt={16}
           h="600px"
-          w={["100px", "100px", "300px", "400px", "400px"]}
+          w={["100px", "100px", "300px", "300px", "400px"]}
           borderRadius="md"
           shadow="xs"
           overflowY="scroll"
@@ -107,7 +107,8 @@ export const TeorieContinut = () => {
         display={["none", "none", "flex", "flex", "flex"]}
         direction="column"
         flex={1}
-        px={4}
+        pl={4}
+        pr={[0, 0, 10, 50, 100]}
         pt={4}
         w="60vw"
       >

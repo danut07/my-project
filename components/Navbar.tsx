@@ -130,7 +130,7 @@ export const Navbar = () => {
             >
               <Link
                 color="blue.500"
-                href="/pricing"
+                href="/teste"
                 _focus={{ outline: "none", boxShadow: "none !important" }}
               >
                 Teste
