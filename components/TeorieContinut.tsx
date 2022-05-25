@@ -3,9 +3,11 @@ import {
   AccordionButton,
   AccordionItem,
   AccordionPanel,
+  AccordionIcon,
   Box,
   Flex,
   Link,
+  Text,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -29,35 +31,50 @@ export const TeorieContinut = () => {
       pos="relative"
     >
       <Flex
-        border="2px solid red"
+        // border="2px solid red"
         display={["none", "none", "flex", "flex", "flex"]}
-        justify="center"
-        w="50vw"
+        justify="right"
+        w="40vw"
         h="100vh"
         pos="sticky"
         top={0}
+        pr={4}
       >
         <Flex
           direction="column"
           mt={16}
           h="600px"
           w={["100px", "100px", "300px", "400px", "400px"]}
-          border="2px solid black"
+          borderRadius="md"
+          shadow="xs"
           overflowY="scroll"
         >
-          Lectii
+          <Text fontWeight="bold" fontSize="xl" my={2} ml={2}>
+            Capitole
+          </Text>
           {capitol.map((row: any, idx: number) => {
             return (
               <Flex key={idx.toString()} w="100%">
-                <Accordion defaultIndex={[0]} allowMultiple w="100%">
+                <Accordion
+                  defaultIndex={[0]}
+                  allowMultiple
+                  w="100%"
+                  border="transparent"
+                >
                   <AccordionItem key={idx.toString()}>
-                    <h2>
-                      <AccordionButton>
+                    <Flex>
+                      <AccordionButton
+                        _hover={{ hover: "none" }}
+                        _focus={{ focus: "none" }}
+                      >
                         <Box flex="1" textAlign="left">
-                          {row}
+                          <Text fontWeight="semibold" fontSize="lg">
+                            {row}
+                          </Text>
                         </Box>
+                        <AccordionIcon />
                       </AccordionButton>
-                    </h2>
+                    </Flex>
                     <AccordionPanel pb={4}>
                       <UnorderedList>
                         {listaSubcapitole[idx].map(
@@ -86,11 +103,13 @@ export const TeorieContinut = () => {
         </Flex>
       </Flex>
       <Flex
-        border="2px solid blue"
+        // border="2px solid blue"
         display={["none", "none", "flex", "flex", "flex"]}
         direction="column"
         flex={1}
-        w="50vw"
+        px={4}
+        pt={4}
+        w="60vw"
       >
         {Object.values(listaTeorie[teorie]).at(subject)}
       </Flex>

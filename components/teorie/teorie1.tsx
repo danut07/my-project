@@ -1,28 +1,29 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import { TextSubcapitol, TitluSubcapitol } from "../tipografie";
 export const useTeorie1 = () => {
   const consideratii = (
     <Flex direction={"inherit"}>
-      <Text>Definiţie</Text>
-      <Text>
+      <TitluSubcapitol>Definiţie</TitluSubcapitol>
+      <TextSubcapitol>
         Colecţie de date structurate si obiecte asociate acestora ce oferă o
         organizare ce facilitează extragerea de informaţii şi prelucrarea
         acestora.
-      </Text>
-      <Text>Obiecte</Text>
-      <Text>
+      </TextSubcapitol>
+      <TitluSubcapitol>Obiecte</TitluSubcapitol>
+      <TextSubcapitol>
         Obiectele bazelor de date sunt reprezentate în principal de tabele cu o
         structură riguroasă şi restricţii ce definesc corelarea datelor din
         tabele şi între tabele. In unele medii de operare bazele de date mai
         includ şi obiecte asociate tabelelor, facilitând operaţiile de
         prelucrare a datelor din tabele.
-      </Text>
+      </TextSubcapitol>
     </Flex>
   );
   const sgbd = (
     <Flex direction={"inherit"}>
-      <Text>Definitie</Text>
-      <Text>
+      <TitluSubcapitol>Definitie</TitluSubcapitol>
+      <TextSubcapitol>
         Un SGDB este un mediu de dezvoltare framework care oferă un context
         eficient pentru memorarea şi extragerea de informaţii din bazele de
         date. Un SGBD • ascunde detaliile referitoare la memorarea şi
@@ -30,40 +31,45 @@ export const useTeorie1 = () => {
         prin care se vor reprezenta informaţiile în baza de date. Complexitatea
         este ascunsă de SGBD • asigură un extragerea informatiilor în mod
         eficient.
-      </Text>
-      <Text>Nivele de abstractizare a datelor</Text>• nivelul fizic descriecum
-      sunt memorate datele • nivelul conceptual: - descrie în detaliu
-      structurile de date low-level, printr-un număr mic de structuri relativ
-      simple - ce date sunt memorate în BD - relaţiile care există între ele -
-      este utilizat de administratorul BD care decide ce informaţii se păstrează
-      în BD. • nivelul vizualizărilor - simplifică interacţiunea cu utilizatorii
-      care necesită doar o parte a BD. Într-un sistem se pot furniza mai multe
-      vizualizări pentru aceeaşi BD.
-      <Text>Arhitectură </Text>
-      Arhitectura SGBD şi a aplicaţiilor cu BD este “client-server” 1.2.4.
-      Servicii Serviciile se pot împărţii în - funcţii de prelucrare a datelor o
-      definire a structurii o manipulare informaţii  extragere şi prelucrare o
-      control al datelor tranzacţii, gestiunea utilizatorilor - servicii de
-      calitate o persistenţa datelor o integritatea datelor o consistenţa
-      datelor o acces concurent la date Instrumente de prelucrare i. Procedurale
-      limbaje de programare procedurale care oferă suport prelucrărilor
-      algoritmice ii. Declarative limbaje de programare neprocedurale ce oferă
-      suport interogărilor 1.2.6. Avantaje - corespunzătoare serviciilor de
-      calitate 1.2.7. Exemple Access Oracle MySQL SQL-Server SyBase Visual
-      FoxPro
+      </TextSubcapitol>
+      <TitluSubcapitol>Nivele de abstractizare a datelor</TitluSubcapitol>
+      <TextSubcapitol>
+        • nivelul fizic descriecum sunt memorate datele {<br />}• nivelul
+        conceptual: - descrie în detaliu structurile de date low-level,
+        printr-un număr mic de structuri relativ simple - ce date sunt memorate
+        în BD - relaţiile care există între ele - este utilizat de
+        administratorul BD care decide ce informaţii se păstrează în BD. •
+        nivelul vizualizărilor - simplifică interacţiunea cu utilizatorii care
+        necesită doar o parte a BD. Într-un sistem se pot furniza mai multe
+        vizualizări pentru aceeaşi BD.
+      </TextSubcapitol>
+      <TitluSubcapitol>Arhitectură</TitluSubcapitol>
+      <TextSubcapitol>
+        Arhitectura SGBD şi a aplicaţiilor cu BD este “client-server” 1.2.4.
+        Servicii Serviciile se pot împărţii în - funcţii de prelucrare a datelor
+        o definire a structurii o manipulare informaţii  extragere şi
+        prelucrare o control al datelor tranzacţii, gestiunea utilizatorilor -
+        servicii de calitate o persistenţa datelor o integritatea datelor o
+        consistenţa datelor o acces concurent la date Instrumente de prelucrare
+        i. Procedurale limbaje de programare procedurale care oferă suport
+        prelucrărilor algoritmice ii. Declarative limbaje de programare
+        neprocedurale ce oferă suport interogărilor 1.2.6. Avantaje -
+        corespunzătoare serviciilor de calitate 1.2.7. Exemple Access Oracle
+        MySQL SQL-Server SyBase Visual FoxPro
+      </TextSubcapitol>
     </Flex>
   );
   const modeleDeDate = (
     <Flex direction={"inherit"}>
-      <Text>Definitie</Text>
-      <Text>
+      <TitluSubcapitol>Definitie</TitluSubcapitol>
+      <TextSubcapitol>
         O colecţie de instrumente (tools) conceptuale pentru descrierea de: •
         date • relaţii între date • semantici ale datelor (semnificaţii) •
         restricţii asupra datelor (constrains). Modelul de baza: Modelul
         relaţional al datelor.
-      </Text>
-      <Text>Modelul Entitate-Relatie.</Text>
-      <Text>
+      </TextSubcapitol>
+      <TitluSubcapitol>Modelul Entitate-Relatie.</TitluSubcapitol>
+      <TextSubcapitol>
         Modelul E-R Lumea reală este o colecţie de entităţi (obiecte de bază) şi
         relaţii (între aceste obiecte de bază). O entitate este un obiect care
         există şi este distinct de alte obiecte. Distinct pentru că este definit
@@ -82,9 +88,9 @@ export const useTeorie1 = () => {
         reprezentarea relaţiilor între seturi de entitaăţi - linii pentru
         reprezentarea legăturii între atribute-seturi de entităti-seturi de
         relaţii.
-      </Text>
-      <Text>Modelul relational</Text>
-      <Text>
+      </TextSubcapitol>
+      <TitluSubcapitol>Modelul relational</TitluSubcapitol>
+      <TextSubcapitol>
         Model elaborat de Edgar F. Codd în 1970. MR separă aspectele fizice de
         cele logice ale bazei de date. MR are la bază modelul conceptual
         Entitate-Relaţie. Are la baza algebra relaţională care oferă următoarele
@@ -104,7 +110,7 @@ export const useTeorie1 = () => {
         relatii. Intersectia afiseaza toate randurile care apar in ambele din
         cele doua relatii. Diferenta afiseaza randurile care apar numai intr-o
         singura relatie (SQL utilizeaza operatorul minus ).
-      </Text>
+      </TextSubcapitol>
     </Flex>
   );
   return { consideratii, sgbd, modeleDeDate };

@@ -13,6 +13,7 @@ import {
   Text,
   Image,
   useDisclosure,
+  Divider,
 } from "@chakra-ui/react";
 
 export const Navbar = () => {
@@ -152,6 +153,7 @@ export const Navbar = () => {
             </Text>
           </Flex>
         </Flex>
+        <Divider w="100%" />
       </Flex>
     </>
   );
