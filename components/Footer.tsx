@@ -9,7 +9,6 @@ export const Footer = () => {
       paddingTop={8}
       paddingBottom={8}
       flex={0}
-      zIndex={11}
     >
       <Text color="white">@2022 - Vlad Moroianu</Text>
     </Flex>

@@ -45,17 +45,18 @@ export const useTeorie1 = () => {
       </TextSubcapitol>
       <TitluSubcapitol>Arhitectură</TitluSubcapitol>
       <TextSubcapitol>
-        Arhitectura SGBD şi a aplicaţiilor cu BD este “client-server” 1.2.4.
-        Servicii Serviciile se pot împărţii în - funcţii de prelucrare a datelor
-        o definire a structurii o manipulare informaţii  extragere şi
-        prelucrare o control al datelor tranzacţii, gestiunea utilizatorilor -
-        servicii de calitate o persistenţa datelor o integritatea datelor o
-        consistenţa datelor o acces concurent la date Instrumente de prelucrare
-        i. Procedurale limbaje de programare procedurale care oferă suport
+        Arhitectura SGBD şi a aplicaţiilor cu BD este “client-server”
+      </TextSubcapitol>
+      <TitluSubcapitol>Servicii</TitluSubcapitol>
+      <TextSubcapitol>
+        Serviciile se pot împărţii în - funcţii de prelucrare a datelor o
+        definire a structurii o manipulare informaţii  extragere şi prelucrare
+        o control al datelor tranzacţii, gestiunea utilizatorilor - servicii de
+        calitate o persistenţa datelor o integritatea datelor o consistenţa
+        datelor o acces concurent la date Instrumente de prelucrare i.
+        Procedurale limbaje de programare procedurale care oferă suport
         prelucrărilor algoritmice ii. Declarative limbaje de programare
-        neprocedurale ce oferă suport interogărilor 1.2.6. Avantaje -
-        corespunzătoare serviciilor de calitate 1.2.7. Exemple Access Oracle
-        MySQL SQL-Server SyBase Visual FoxPro
+        neprocedurale ce oferă suport interogărilor
       </TextSubcapitol>
     </Flex>
   );
@@ -113,5 +114,35 @@ export const useTeorie1 = () => {
       </TextSubcapitol>
     </Flex>
   );
-  return { consideratii, sgbd, modeleDeDate };
+  const sql = (
+    <Flex direction={"inherit"}>
+      <TitluSubcapitol>Terminologie</TitluSubcapitol>
+      <TextSubcapitol>
+        Tabel = entitate (MEA), relaţie (MR) Coloana = atribut (MEA, MR) Linie =
+        tuplu (MR) Câmp (intersecţia dintre o linie şi o coloană) = valoare
+        atribut Restricţii: - cheie primară, PK – identifică în mod unic fiecare
+        linie din tabel - not NULL, NN - cheie unica, UK - cheie străină, FK -
+        CHECK expresieLogica • NULL = valoare neintrodusă într-un câmp.
+      </TextSubcapitol>
+      <TitluSubcapitol>Proprietăţi tabel</TitluSubcapitol>
+      <TextSubcapitol>
+        Un singur tabel are urmatoarele proprietati: • Nu exista randuri
+        duplicate • Nu exista nume de coloana duplicate • Ordinea randurilor
+        este neimportanta • Ordinea coloanalor este neimportanta • Valorile sunt
+        atomice(nedecompozabile). SQL conţine comenzi pentru realizarea
+        funcţiilor asociate bazelor de date: - creare - modificare - stergere -
+        interogare - prelucrare (calcule, filtrare, ordonare, etc.) - protecţie.
+      </TextSubcapitol>
+      <TitluSubcapitol>Limbaje</TitluSubcapitol>
+      <TextSubcapitol>
+        Comenzile sunt grupate în următoarele limbaje: b. DML (Data Manipulation
+        Language) – comenzi pentru introducerea, modificarea şi stergerea
+        datelor din BD. c. DDL (Data Definition Language) – comenzi pentru
+        crearea, modificarea structurilor de date (tabele, relaţii) d. DCL (Data
+        Control Language) – comenzi pentru gestiunea operaţiilor realizate şi a
+        drepturilor de acces la date.
+      </TextSubcapitol>
+    </Flex>
+  );
+  return { consideratii, sgbd, modeleDeDate, sql };
 };

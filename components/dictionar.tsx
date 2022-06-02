@@ -3,11 +3,15 @@ export const subcapitole1 = [
   "SGBD (Sisteme pentru Gestiunea Bazelor de Date)",
   "Modele de date",
   "SQL (structured Query Language)",
-  "Contextul în care se utilizează tipurile de date",
 ];
 
-export const subcapitole2 = ["testing", "123"];
+export const subcapitole2 = [
+  "Contextul în care se utilizează tipurile de date",
+  "Terminologia SQL",
+  "Tipuri de date",
+  "Studiu de caz: ACCESS",
+];
 
 export const subcapitole3 = ["testing", "123"];
 
-export const capitole = ["Baze de date", "Testing123"];
+export const capitole = ["Baze de date", "SQL - Tipuri de date"];
