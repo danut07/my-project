@@ -1,3 +1,4 @@
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
   Accordion,
   AccordionButton,
@@ -10,6 +11,10 @@ import {
   Text,
   ListItem,
   UnorderedList,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { capitole, subcapitole1, subcapitole2 } from "../components/dictionar";
@@ -31,7 +36,6 @@ export const TeorieContinut = () => {
       pos="relative"
     >
       <Flex
-        // border="2px solid red"
         display={["none", "none", "flex", "flex", "flex"]}
         justify="right"
         w="40vw"
@@ -102,15 +106,83 @@ export const TeorieContinut = () => {
           })}
         </Flex>
       </Flex>
+      <Flex display={["flex", "flex", "none", "none", "none"]} w="100%">
+        <Menu>
+          <MenuButton
+            px={4}
+            py={2}
+            transition="all 0.2s"
+            borderRadius="md"
+            borderWidth="1px"
+            _expanded={{ bg: "blue.400" }}
+            _focus={{ boxShadow: "none" }}
+            w="100%"
+          >
+            Capitole <ChevronDownIcon />
+          </MenuButton>
+          <MenuList>
+            {capitol.map((row: any, idx: number) => {
+              return (
+                <Flex key={idx.toString()} w="100%">
+                  <Accordion
+                    defaultIndex={[0]}
+                    allowMultiple
+                    w="100%"
+                    border="transparent"
+                  >
+                    <AccordionItem key={idx.toString()}>
+                      <Flex>
+                        <AccordionButton
+                          _hover={{ hover: "none" }}
+                          _focus={{ focus: "none" }}
+                        >
+                          <Box flex="1" textAlign="left">
+                            <Text fontWeight="semibold" fontSize="lg">
+                              {row}
+                            </Text>
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </Flex>
+                      <AccordionPanel pb={4}>
+                        <UnorderedList>
+                          {listaSubcapitole[idx].map(
+                            (row: any, index: number) => (
+                              <MenuItem>
+                                <Flex key={index.toString()}>
+                                  <Link
+                                    onClick={() => {
+                                      setSubject(index);
+                                      setTeorie(idx);
+                                    }}
+                                  >
+                                    <ListItem key={index.toString()}>
+                                      {row}
+                                    </ListItem>
+                                  </Link>
+                                </Flex>
+                              </MenuItem>
+                            )
+                          )}
+                        </UnorderedList>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </Flex>
+              );
+            })}
+          </MenuList>
+        </Menu>
+      </Flex>
       <Flex
         // border="2px solid blue"
-        display={["none", "none", "flex", "flex", "flex"]}
+        display={["flex", "flex", "flex", "flex", "flex"]}
         direction="column"
         flex={1}
         pl={4}
         pr={[0, 0, 10, 50, 100]}
         pt={4}
-        w="60vw"
+        w={["90vw", "90vw", "60vw", "60vw", "60vw"]}
       >
         {Object.values(listaTeorie[teorie]).at(subject)}
       </Flex>

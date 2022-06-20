@@ -21,7 +21,13 @@ export const Navbar = () => {
   const navbarHeight = "128px";
   return (
     <>
-      <Flex w="100vw" h={navbarHeight} direction="column" flex={0}>
+      <Flex
+        w="100vw"
+        h={navbarHeight}
+        direction="column"
+        flex={0}
+        backgroundColor="white"
+      >
         {/* mobile */}
         <Flex
           display={["flex", "flex", "none", "none", "none"]}
