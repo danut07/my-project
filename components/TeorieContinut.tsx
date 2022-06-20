@@ -106,7 +106,16 @@ export const TeorieContinut = () => {
           })}
         </Flex>
       </Flex>
-      <Flex display={["flex", "flex", "none", "none", "none"]} w="100%">
+      <Flex
+        display={["flex", "flex", "none", "none", "none"]}
+        w="100%"
+        h="50px"
+        backgroundColor="white"
+        //this is the magic right here
+        position="sticky"
+        top="0px"
+        //it's amazing
+      >
         <Menu>
           <MenuButton
             px={4}
@@ -114,7 +123,7 @@ export const TeorieContinut = () => {
             transition="all 0.2s"
             borderRadius="md"
             borderWidth="1px"
-            _expanded={{ bg: "blue.400" }}
+            _expanded={{ bg: "blue.300" }}
             _focus={{ boxShadow: "none" }}
             w="100%"
           >
@@ -148,8 +157,8 @@ export const TeorieContinut = () => {
                         <UnorderedList>
                           {listaSubcapitole[idx].map(
                             (row: any, index: number) => (
-                              <MenuItem>
-                                <Flex key={index.toString()}>
+                              <MenuItem key={index.toString()}>
+                                <Flex>
                                   <Link
                                     onClick={() => {
                                       setSubject(index);
