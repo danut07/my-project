@@ -29,7 +29,7 @@ export const TesteContinut = () => {
         </TabList>
         <TabPanels>
           <TabPanel w="100%">
-            <Flex w="inherit" justify="center">
+            <Flex w="inherit">
               <Text>intrebarea unu</Text>
               <RadioGroup onChange={setValue} value={value}>
                 <Stack direction="row">
