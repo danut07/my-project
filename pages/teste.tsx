@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { TeorieContinut } from "../components/TeorieContinut";
+import { TesteContinut } from "../components/TesteContinut";
 
 const Teste: NextPage = () => {
-  return <TeorieContinut />;
+  return <TesteContinut />;
 };
 
 export default Teste;
