@@ -9,7 +9,7 @@ export const subcapitole2 = [
   "Contextul în care se utilizează tipurile de date",
   "Terminologia SQL",
   "Tipuri de date",
-  "Studiu de caz: ACCESS",
+  "Comenzi SQL",
 ];
 
 export const subcapitole3 = ["testing", "123"];

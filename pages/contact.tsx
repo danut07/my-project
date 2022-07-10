@@ -6,7 +6,7 @@ const Contact: NextPage = () => {
     <Flex w="100%" h="100%" justify="center" align="center">
       <Flex
         w={["90vw", "90vw", "80vw", "80vw", "80vw"]}
-        h={["50vh", "50vh", "30vh", "30vh", "30vh"]}
+        h={["60vh", "60vh", "30vh", "30vh", "30vh"]}
         shadow="lg"
         backgroundColor="gray.100"
         direction={["column", "column", "row", "row", "row"]}
@@ -15,15 +15,9 @@ const Contact: NextPage = () => {
           direction="column"
           w={["100%", "100%", "30%", "30%", "30%"]}
           align="center"
-          justify={[
-            "space-evenly",
-            "space-evenly",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center"]}
         >
-          <Image src="/buna.png" h={["50%", "50%", "25%", "25%", "25%"]} />
+          <Image src="/contact.jpeg" w={["35%", "35%", "30%", "25%", "20%"]} />
           <Text py={["0", "0", "5", "5", "5"]}>Moroianu Vlad-Adrian</Text>
         </Flex>
         {/* pc divider */}

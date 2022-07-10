@@ -20,6 +20,7 @@ import { useState } from "react";
 import { capitole, subcapitole1, subcapitole2 } from "../components/dictionar";
 import { useTeorie1 } from "../components/teorie/teorie1";
 import { useTeorie2 } from "../components/teorie/teorie2";
+
 export const TeorieContinut = () => {
   const [subject, setSubject] = useState<number>(0);
   const [teorie, setTeorie] = useState<number>(0);
