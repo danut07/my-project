@@ -31,6 +31,8 @@ const Contact: NextPage = () => {
         <Flex direction="column" align="left" justify="center">
           <Text>Facultatea de Matematica si Informatica</Text>
           <Text>Matematica-Informatica</Text>
+          <Text>moroianuvlad@yahoo.com</Text>
+          <Text>0736172600</Text>
         </Flex>
       </Flex>
     </Flex>
